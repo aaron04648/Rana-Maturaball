@@ -53,9 +53,36 @@
       border: 1px solid #d7b684;
       border-radius: 50px;
       cursor: pointer;
+      margin-bottom: 100px;
     }
     .button:hover {
       background-color: #d7b684;
     }
+    .UsPreview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .preview-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        h1 {
+          display: inline-block;
+          position: relative;
+          font-size: 52px; /* Passen Sie die Schriftgröße nach Bedarf an */
+          color: #000; /* Schriftfarbe */
+        }
+        .border-styled {
+          margin-top: -20px;
+          width: 300px;
+        }
+      }
+      p {
+        width: 30vw;
+        margin-bottom: 100px;
+      }
+    }
   }
 }
+/* Image 74 */
