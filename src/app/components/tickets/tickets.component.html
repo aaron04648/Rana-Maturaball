@@ -1,1 +1,38 @@
-<p>tickets works!</p>
+<div class="wrapper">
+  <div class="preview-title">
+    <h1>Tickets</h1>
+    <img
+      class="border-styled"
+      src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/image-removebg-preview%20(9).png?alt=media&token=36fd09a4-ca9c-4f20-a89f-816e09e79cdd"
+      alt=""
+    />
+  </div>
+  <p>
+    Wir freuen uns, Sie zu unserer Veranstaltung einzuladen! Die Abendkasse
+    öffnet um <b>21:30 Uhr</b> Uhr ihre Tore, um Ihnen den Eintritt zu
+    ermöglichen. Alternativ bieten wir Ihnen die Möglichkeit, Ihre Tickets
+    online im Voraus zu erwerben. Wenn Sie diese Option bevorzugen, besuchen Sie
+    einfach unsere Webseite und scannen Sie den QR-Code oder klicken Sie auf den
+    bereitgestellten Link
+  </p>
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/unnamed.jpg?alt=media&token=9d2634e5-2a13-417a-966c-171dd5e55b59"
+    alt=""
+  />
+  <div>
+    <div class="Link-container">
+      <input type="text" [(ngModel)]="link" name="inputField" />
+
+      <button
+        mat-icon-button
+        matTooltip="Basic"
+        aria-label="Example icon-button with a heart icon"
+        (click)="copyLink()"
+      >
+        <mat-icon>content_copy</mat-icon>
+      </button>
+    </div>
+
+    <div *ngIf="this.copied">kopiert!</div>
+  </div>
+</div>
