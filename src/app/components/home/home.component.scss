@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
   .banner {
     width: 66vw;
     border-radius: 5px;
@@ -58,31 +59,48 @@
     .button:hover {
       background-color: #d7b684;
     }
-    .UsPreview {
+    .about-us {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .preview-title {
+      margin-bottom: 100px;
+      .about-us-title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+
         h1 {
           display: inline-block;
           position: relative;
           font-size: 52px; /* Passen Sie die Schriftgröße nach Bedarf an */
           color: #000; /* Schriftfarbe */
         }
-        .border-styled {
-          margin-top: -20px;
-          width: 300px;
-        }
       }
       p {
         width: 30vw;
-        margin-bottom: 100px;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+          width: 20vw;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .emailButton {
+          background-color: #d7b684 !important;
+        }
       }
     }
+    .sponsors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .border-styled {
+    margin-top: -20px;
+    width: 300px;
   }
 }
-/* Image 74 */
