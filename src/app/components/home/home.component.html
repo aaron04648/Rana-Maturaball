@@ -82,7 +82,7 @@
           zur Verfügung.
         </p>
         <button class="emailButton" mat-button>
-          <mat-icon>email</mat-icon>email
+          <mat-icon>email</mat-icon>Email
         </button>
       </div>
     </div>
@@ -94,6 +94,11 @@
         src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/image-removebg-preview%20(9).png?alt=media&token=36fd09a4-ca9c-4f20-a89f-816e09e79cdd"
         alt=""
       />
+      <div class="banner-container">
+        <div class="images">
+          <img *ngFor="let image of images" [src]="image" alt="Bild" />
+        </div>
+      </div>
     </div>
   </div>
 </div>

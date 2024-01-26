@@ -1,8 +1,8 @@
 .wrapper {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
   margin-bottom: 100px;
   .banner {
     width: 66vw;
@@ -11,8 +11,8 @@
   .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     h1 {
       font-size: 52px;
     }
@@ -28,16 +28,16 @@
     align-items: center;
 
     .information-container {
-      margin-bottom: 100px;
       display: flex;
       flex-direction: column;
       width: 40vw;
+      margin-bottom: 100px;
       .information {
         width: 18vw;
       }
       h1 {
-        font-size: 40px;
         color: #d7b684;
+        font-size: 40px;
       }
       .info-left {
         align-self: flex-start;
@@ -48,13 +48,13 @@
     }
 
     .button {
-      text-align: center;
-      padding: 10px;
       width: 200px;
+      padding: 10px;
+      margin-bottom: 100px;
       border: 1px solid #d7b684;
       border-radius: 50px;
+      text-align: center;
       cursor: pointer;
-      margin-bottom: 100px;
     }
     .button:hover {
       background-color: #d7b684;
@@ -72,8 +72,8 @@
         h1 {
           display: inline-block;
           position: relative;
-          font-size: 52px; /* Passen Sie die Schriftgröße nach Bedarf an */
           color: #000; /* Schriftfarbe */
+          font-size: 52px; /* Passen Sie die Schriftgröße nach Bedarf an */
         }
       }
       p {
@@ -85,8 +85,8 @@
         align-items: center;
         p {
           width: 20vw;
-          text-align: center;
           margin-bottom: 40px;
+          text-align: center;
         }
         .emailButton {
           background-color: #d7b684 !important;
@@ -100,7 +100,33 @@
     }
   }
   .border-styled {
-    margin-top: -20px;
     width: 300px;
+    margin-top: -20px;
+  }
+  .banner-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .images {
+    display: inline-flex;
+    animation: scrollLeft 10s linear infinite;
+  }
+
+  .images img {
+    width: auto;
+    height: 100px;
+    margin-right: 100px;
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }

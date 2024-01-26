@@ -25,9 +25,9 @@
 
       <button
         mat-icon-button
-        matTooltip="Basic"
+        matTooltip="kopieren"
         aria-label="Example icon-button with a heart icon"
-        (click)="copyLink()"
+        [cdkCopyToClipboard]="link"
       >
         <mat-icon>content_copy</mat-icon>
       </button>

@@ -1,3 +1,4 @@
+import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,7 +8,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TicketsComponent } from './tickets.component';
-
 @NgModule({
   declarations: [TicketsComponent],
   imports: [
@@ -18,6 +18,7 @@ import { TicketsComponent } from './tickets.component';
     MatSelectModule,
     BrowserAnimationsModule,
     FormsModule,
+    ClipboardModule,
   ],
   exports: [TicketsComponent],
 })
