@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 50px;
+  .banner {
+    width: 66vw;
+    min-width: 300px;
+    border-radius: 5px;
+  }
+  .preview-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    h1 {
+      text-align: center;
+      color: #000;
+      font-size: 52px;
+    }
+    .border-styled {
+      width: 300px;
+      margin-top: -20px;
+    }
+  }
+  p {
+    width: 30vw;
+    min-width: 300px;
+  }
+}

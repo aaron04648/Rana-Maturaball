@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     h1 {
+      text-align: center;
       font-size: 52px;
     }
     @media (max-width: 700px) {
@@ -34,6 +35,8 @@
       margin-bottom: 100px;
       .information {
         width: 18vw;
+
+        min-width: 200px;
       }
       h1 {
         color: #d7b684;
@@ -64,32 +67,52 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 100px;
+
       .about-us-title {
         display: flex;
         flex-direction: column;
         align-items: center;
 
         h1 {
-          display: inline-block;
-          position: relative;
-          color: #000; /* Schriftfarbe */
-          font-size: 52px; /* Passen Sie die Schriftgröße nach Bedarf an */
+          text-align: center;
+          color: #000;
+          font-size: 52px;
         }
       }
       p {
         width: 30vw;
+        min-width: 300px;
+        text-align: center;
       }
       .contact {
+        .emailButton {
+          background-color: #d7b684 !important;
+        }
+      }
+      .aboutus-information {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .text {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 50px;
+          align-items: center;
+        }
         p {
-          width: 20vw;
+          width: 40vw;
           margin-bottom: 40px;
           text-align: center;
         }
-        .emailButton {
-          background-color: #d7b684 !important;
+        .h3 {
+          text-align: center;
+        }
+        .pic-of-dj {
+          width: 300px;
+          border-radius: 5px;
+        }
+        .QR-Code {
+          width: 100px;
         }
       }
     }

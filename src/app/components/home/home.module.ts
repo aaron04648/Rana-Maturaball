@@ -1,3 +1,4 @@
+import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,6 +21,7 @@ import { HomeComponent } from './home.component';
     MatIconModule,
     BrowserAnimationsModule,
     FormsModule,
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [HomeComponent],

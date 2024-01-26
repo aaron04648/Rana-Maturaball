@@ -1,4 +1,9 @@
 <div class="wrapper">
+  <img
+    class="banner"
+    src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/Screenshot%202024-01-26%20at%2009.27.12.png?alt=media&token=04990e7d-dc63-4366-a72a-786e08b6dc63"
+    alt=""
+  />
   <div class="preview-title">
     <h1>Tickets</h1>
     <img
@@ -21,8 +26,6 @@
   />
   <div>
     <div class="Link-container">
-      <input class="Link" [(ngModel)]="link" name="inputField" />
-
       <button
         mat-icon-button
         matTooltip="kopieren"
@@ -31,6 +34,19 @@
       >
         <mat-icon>content_copy</mat-icon>
       </button>
+      <input class="Link" [(ngModel)]="link" name="inputField" />
+
+      <a
+        href="https://eventfrog.ch/en/p/party/motto-party/royal-night-ein-kroenender-abschluss-7153714301936547717.html"
+      >
+        <button
+          mat-icon-button
+          matTooltip="zur Webseite"
+          aria-label="Example icon-button with a heart icon"
+        >
+          <mat-icon>open_in_new</mat-icon>
+        </button></a
+      >
     </div>
 
     <div *ngIf="this.copied">kopiert!</div>

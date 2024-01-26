@@ -56,7 +56,7 @@
         Brig jedes Jahr von Schüler:innen des vierten Jahres organisiert. Dieses
         Jahr sind wir ein Team aus 13 Personen
       </p>
-      <div>
+      <div class="aboutus-information">
         <h3>Das Team</h3>
         <ul>
           <li>Giulio Eggel</li>
@@ -69,10 +69,33 @@
           <li>Lisa Buchard</li>
           <li>Nina Schröter</li>
           <li>Lisa Brandt</li>
+          <li>Jana Andenmatten</li>
+          <li>Céline Cornut</li>
+          <li>Greta Summann</li>
         </ul>
       </div>
+      <div class="aboutus-information">
+        <h3>DJ</h3>
+        <div class="text">
+          <p>
+            Unserer DJ für den Abend ist der DJ Callisto. <br />
+            Scanne der Qr-Code um mehr zu erfahren
+          </p>
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/qrcode-djcallisto.png?alt=media&token=185df700-2e4c-43ac-adec-526db1bb838d"
+            alt="QR-Code to his Website"
+            class="QR-Code"
+          />
+        </div>
 
-      <div class="contact">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/rana-maturaball.appspot.com/o/C44635AD-4FF9-4E86-BC2D-3A32C381E433.JPEG?alt=media&token=eb58a957-fce6-440f-9d9b-ea8c0d245305"
+          alt="picture of the DJ"
+          class="pic-of-dj"
+        />
+      </div>
+
+      <div class="aboutus-information contact">
         <h3>Kontakt</h3>
         <p>
           Falls Sie Fragen oder Anliegen haben, zögern Sie nicht, unser Team zu
@@ -81,8 +104,14 @@
           Sponsoring-Partnerschaft und stehen für entsprechende Anfragen gerne
           zur Verfügung.
         </p>
-        <button class="emailButton" mat-button>
-          <mat-icon>email</mat-icon>Email
+        <p>{{ email }}</p>
+        <button
+          class="emailButton"
+          mat-button
+          [cdkCopyToClipboard]="email"
+          matTooltip="Mail-Adresse kopieren"
+        >
+          <mat-icon>email</mat-icon>Email kopieren
         </button>
       </div>
     </div>
